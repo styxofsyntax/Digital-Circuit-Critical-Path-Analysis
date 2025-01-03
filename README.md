@@ -23,11 +23,12 @@ This tool supports both combinational and sequential circuits, and it:
 
 ## File Structure
 
-project/
+```project/
 ├── circuit_parser.py # Handles parsing circuit files and building the graph
 ├── critical_path.py # Analyzes the circuit and calculates the critical path
 ├── visualizer.py # Visualizes the circuit and critical path
 ├── main.py # Entry point for the program
+```
 
 ## Installation
 
