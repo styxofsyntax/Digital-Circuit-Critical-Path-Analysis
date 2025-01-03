@@ -35,8 +35,8 @@ This tool supports both combinational and sequential circuits, and it:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/digital-circuit-analyzer.git
-cd digital-circuit-analyzer
+git clone https://github.com/styxofsyntax/Digital-Circuit-Critical-Path-Analysis
+cd Digital-Circuit-Critical-Path-Analysis
 ```
 
 2.  Install dependencies:
