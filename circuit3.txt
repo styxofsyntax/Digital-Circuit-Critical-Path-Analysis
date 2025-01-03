@@ -1,0 +1,8 @@
+# Circuit with multiple paths and multiplexor
+INPUT in1
+INPUT in2
+INPUT in3
+ADD add1 in1 in2
+MUX mux1 add1 in3
+MUL mul1 mux1 in2
+OUTPUT out1 mul1

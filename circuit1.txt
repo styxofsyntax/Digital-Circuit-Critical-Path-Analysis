@@ -1,0 +1,6 @@
+# Simple adder-multiplier circuit
+INPUT in1
+INPUT in2
+ADD add1 in1 in2
+MUL mul1 in1 add1
+OUTPUT out1 mul1

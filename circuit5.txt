@@ -1,0 +1,10 @@
+# Complex circuit with multiple components
+INPUT in1
+INPUT in2
+INPUT in3
+ADD add1 in1 in2
+MUL mul1 add1 in3
+REG reg1 mul1
+ADD add2 reg1 in2
+MUX mux1 add2 in3
+OUTPUT out1 mux1

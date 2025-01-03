@@ -1,0 +1,9 @@
+# Sequential circuit with registers
+INPUT in1
+INPUT in2
+ADD add1 in1 in2
+REG reg1 add1
+MUL mul1 reg1 in2
+REG reg2 mul1
+ADD add2 reg2 in1
+OUTPUT out1 add2
