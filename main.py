@@ -1,15 +1,18 @@
+import os
 from circuit_parser import CircuitParser
 from critical_path import CriticalPathAnalyzer
 from visualizer import CircuitVisualizer
 
 def main():
-    circuit_files = ["circuit1.txt", "circuit2.txt",
-                     "circuit3.txt", "circuit4.txt", "circuit5.txt"]
+    circuit_dir = "circuits"
+    circuit_files = [f for f in os.listdir(circuit_dir) if f.endswith('.txt')]
 
     for filename in circuit_files:
         print(f"Analyzing circuit: {filename}")
 
-        parser = CircuitParser(filename)
+        file_path = os.path.join(circuit_dir, filename)
+
+        parser = CircuitParser(file_path)
         graph, node_types = parser.parse()
 
         analyzer = CriticalPathAnalyzer(graph, node_types)
